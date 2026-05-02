@@ -192,7 +192,21 @@ This segmentation enables:
 
 The BNPL v2 dataset reveals a clear segmentation based on purchase amount, dividing customers into high-value (21.6%) and frequent low-value (78.4%) shoppers. This behavioral segmentation provides actionable insights for marketing, product, and risk teams despite similar credit risk profiles across segments.
 
-The 2-cluster KMeans model on the five numerical features is recommended for production use due to its superior separation and clear business interpretation.## Dashboard
+The 2-cluster KMeans model on the five numerical features is recommended for production use due to its superior separation and clear business interpretation.
+
+### Visualization of Clusters
+
+The following scatter plots show the two clusters identified by KMeans (k=2) on the five numerical features.
+
+#### Purchase Amount vs Annual Income
+![Cluster plot: Purchase Amount vs Annual Income](cluster_purchase_income.png)
+
+#### Purchase Amount vs Credit Score
+![Cluster plot: Purchase Amount vs Credit Score](cluster_purchase_credit.png)
+
+Note: Cluster 0 (purple) represents High-Value Shoppers (larger purchase amounts), while Cluster 1 (yellow) represents Frequent Low-Value Shoppers (smaller purchase amounts).
+
+## Dashboard
 - A Streamlit dashboard visualizing the 2‑cluster segmentation is available at `scripts/streamlit_clustering_dashboard.py`. Run with `streamlit run scripts/streamlit_clustering_dashboard.py --server.port 8501`.
 
 ## How to Reproduce
