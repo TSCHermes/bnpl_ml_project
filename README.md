@@ -126,6 +126,9 @@ Beyond prediction, we performed clustering to identify natural customer segments
 - Risk management: Similar risk profiles suggest purchase behavior doesn't strongly correlate with default
 - Customer experience: Personalized communication based on shopping patterns
 
+## Dashboard
+- A Streamlit dashboard visualizing the 2‑cluster segmentation is available at `streamlit_clustering_dashboard.py`. Run with `streamlit run streamlit_clustering_dashboard.py --server.port 8501`.
+
 ## How to Reproduce
 1. Ensure the UV virtual environment is activated:
    ```bash
@@ -142,6 +145,10 @@ Beyond prediction, we performed clustering to identify natural customer segments
    - `results/hyperparameter_tuning/SUMMARY.md`
    - `results/nn_feasibility/NN_FEASIBILITY_REPORT.md`
 5. For clustering results, see `CLUSTERING_REPORT.md` in the project root.
+6. To view the dashboard, run:
+   ```bash
+   streamlit run streamlit_clustering_dashboard.py --server.port 8501
+   ```
 
 ## Notes
 - All experiments used an 80/20 train/test split with stratification on the binary target.
