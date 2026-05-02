@@ -127,7 +127,7 @@ Beyond prediction, we performed clustering to identify natural customer segments
 - Customer experience: Personalized communication based on shopping patterns
 
 ## Dashboard
-- A Streamlit dashboard visualizing the 2‑cluster segmentation is available at `streamlit_clustering_dashboard.py`. Run with `streamlit run streamlit_clustering_dashboard.py --server.port 8501`.
+- A Streamlit dashboard visualizing the 2‑cluster segmentation is available at `scripts/streamlit_clustering_dashboard.py`. Run with `streamlit run scripts/streamlit_clustering_dashboard.py --server.port 8501`.
 
 ## How to Reproduce
 1. Ensure the UV virtual environment is activated:
@@ -147,7 +147,7 @@ Beyond prediction, we performed clustering to identify natural customer segments
 5. For clustering results, see `CLUSTERING_REPORT.md` in the project root.
 6. To view the dashboard, run:
    ```bash
-   streamlit run streamlit_clustering_dashboard.py --server.port 8501
+   streamlit run scripts/streamlit_clustering_dashboard.py --server.port 8501
    ```
 
 ## Notes
